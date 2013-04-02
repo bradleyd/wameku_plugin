@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-Include `Wameku::Plugin::Common` to any of your plguins.  This provides boilerplate methods that the `wameku_client_daemon` calls.
+Include `WamekuPlugin::Common` to any of your plguins.  This provides boilerplate methods that the `wameku_client_daemon` calls.
 
 ```ruby
 require "sys/cpu"
