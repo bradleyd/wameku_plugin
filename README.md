@@ -18,7 +18,29 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Include `Wameku::Plugin::Common` to any of your plguins.  This provides boilerplate methods that the `wameku_client_daemon` calls.
+
+```ruby
+require "sys/cpu"
+require_relative "plugin"
+
+class CpuPlugin
+  include Plugin
+  include Sys
+
+  def initialize
+  end
+
+  def cpu_load
+    CPU.load_avg
+  end
+
+  def stats
+    CPU.cpu_stats
+  end
+
+end
+```
 
 ## Contributing
 
